@@ -14,6 +14,7 @@ A further advanced version of this workshop will ask you to implement abstract c
 * Implement tests for your Crop class
 
 ## Stretch tasks
+
 * Create an animal class and child classes for animals of your choice. Extend these classes with appropriate methods.
 * Create a game class that is responsible for the overall farm, replacing the arrays of fields in index.js. Use this class to track the overall health of the farm.
 * Implement tests for everything

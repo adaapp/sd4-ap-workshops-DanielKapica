@@ -2,12 +2,12 @@ class Crop {
     constructor(type, field, x, y) {
         this.type = type
         // Get the image based on the name of the field
-        this.image = loadImage('/images/'+type.toLowerCase()+'.png') // ./carrot.png
+        this.image = loadImage('./images/'+type.toLowerCase()+'.png') // ./carrot.png
         this.health = 0
         this.field = field
         this.x = x
         this.y = y
-        this.birthstamp = millis() / 1000
+        this.birthstamp = millis() / 100
         this.width = 1
         this.height = 1
         this.healthySize = 30
@@ -18,7 +18,7 @@ class Crop {
 
     getAge() {
         // return the amount of time it's been alive
-        return millis() / 1000 - this.birthstamp
+        return millis() / 100 - this.birthstamp
     }
 
     draw() {
@@ -30,7 +30,7 @@ class Crop {
             var width = 30;
             var height = 30;
         }
- 
+
         image(
             this.image,
             this.x,

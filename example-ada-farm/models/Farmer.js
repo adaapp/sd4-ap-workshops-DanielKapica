@@ -2,7 +2,8 @@ class Farmer {
     constructor(userName) {
         this.field = null
         this.userName = userName
-        this.image = loadImage('/images/farmer.png')
+        // Changed the path to work on the server.
+        this.image = loadImage('./images/farmer.png')
         this.x = 100
         this.y = 100
         this.width = 60
@@ -35,7 +36,7 @@ class Farmer {
 
     farmerKeyPressed() {
         if (keyCode == ENTER) {
-            this.field.plant(this.x, this.y)
+            this.field.plant(this.x + farmer.height/2, this.y + farmer.width/2)
         }
     }
 
